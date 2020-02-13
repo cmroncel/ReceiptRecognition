@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		591A753D23F4B9AE00396655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591A753C23F4B9AE00396655 /* AppDelegate.swift */; };
+		591A753F23F4B9AE00396655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591A753E23F4B9AE00396655 /* ViewController.swift */; };
+		591A754223F4B9AF00396655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591A754023F4B9AF00396655 /* Main.storyboard */; };
+		591A754423F4B9AF00396655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591A754323F4B9AF00396655 /* Assets.xcassets */; };
+		591A754723F4B9AF00396655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591A754523F4B9AF00396655 /* LaunchScreen.storyboard */; };
+		591A755223F4B9AF00396655 /* TextRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591A755123F4B9AF00396655 /* TextRecognitionTests.swift */; };
+		591A755D23F4B9AF00396655 /* TextRecognitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591A755C23F4B9AF00396655 /* TextRecognitionUITests.swift */; };
+		591A756C23F4B9D600396655 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591A756B23F4B9D600396655 /* ImageHelper.swift */; };
+		591A756E23F4B9DE00396655 /* VisionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591A756D23F4B9DE00396655 /* VisionHelper.swift */; };
+		59E2ACD123F4BF9E00C1FA84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 59E2ACD023F4BF9E00C1FA84 /* GoogleService-Info.plist */; };
+		621A51F6B6FA548AEA75F76D /* Pods_TextRecognitionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F863C10864C087C78F970F8C /* Pods_TextRecognitionUITests.framework */; };
+		B660FE0F01A770A3C1D235B0 /* Pods_TextRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4CB08E64569264D41E92B27 /* Pods_TextRecognition.framework */; };
+		D6D0BA7C75BB2001F5F256AC /* Pods_TextRecognitionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193FFD840FF9EA904A67E20C /* Pods_TextRecognitionTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		591A754E23F4B9AF00396655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 591A753123F4B9AE00396655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 591A753823F4B9AE00396655;
+			remoteInfo = TextRecognition;
+		};
+		591A755923F4B9AF00396655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 591A753123F4B9AE00396655 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 591A753823F4B9AE00396655;
+			remoteInfo = TextRecognition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		193FFD840FF9EA904A67E20C /* Pods_TextRecognitionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextRecognitionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2368F638491169936ECCB403 /* Pods-TextRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextRecognition/Pods-TextRecognition.debug.xcconfig"; sourceTree = "<group>"; };
+		591A753923F4B9AE00396655 /* TextRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		591A753C23F4B9AE00396655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		591A753E23F4B9AE00396655 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		591A754123F4B9AF00396655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		591A754323F4B9AF00396655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		591A754623F4B9AF00396655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		591A754823F4B9AF00396655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		591A754D23F4B9AF00396655 /* TextRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		591A755123F4B9AF00396655 /* TextRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognitionTests.swift; sourceTree = "<group>"; };
+		591A755323F4B9AF00396655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		591A755823F4B9AF00396655 /* TextRecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextRecognitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		591A755C23F4B9AF00396655 /* TextRecognitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognitionUITests.swift; sourceTree = "<group>"; };
+		591A755E23F4B9AF00396655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		591A756B23F4B9D600396655 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		591A756D23F4B9DE00396655 /* VisionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionHelper.swift; sourceTree = "<group>"; };
+		591A757123F4BC8500396655 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		591A757223F4BC8500396655 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		59E2ACD023F4BF9E00C1FA84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA5B50EE6007D6F6ACDF425B /* Pods-TextRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognition.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextRecognition/Pods-TextRecognition.release.xcconfig"; sourceTree = "<group>"; };
+		B7A284E88038F71B31E4CCB9 /* Pods-TextRecognitionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognitionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextRecognitionUITests/Pods-TextRecognitionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4CB08E64569264D41E92B27 /* Pods_TextRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E207BA5A2ED72B4C674078E6 /* Pods-TextRecognitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognitionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextRecognitionTests/Pods-TextRecognitionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8B61028C57FC952CA6E9749 /* Pods-TextRecognitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognitionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextRecognitionTests/Pods-TextRecognitionTests.release.xcconfig"; sourceTree = "<group>"; };
+		F101B9A3FE00CD680B295AEA /* Pods-TextRecognitionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognitionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextRecognitionUITests/Pods-TextRecognitionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F863C10864C087C78F970F8C /* Pods_TextRecognitionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextRecognitionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		591A753623F4B9AE00396655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B660FE0F01A770A3C1D235B0 /* Pods_TextRecognition.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591A754A23F4B9AF00396655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D0BA7C75BB2001F5F256AC /* Pods_TextRecognitionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591A755523F4B9AF00396655 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621A51F6B6FA548AEA75F76D /* Pods_TextRecognitionUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		591A753023F4B9AE00396655 = {
+			isa = PBXGroup;
+			children = (
+				591A753B23F4B9AE00396655 /* TextRecognition */,
+				591A755023F4B9AF00396655 /* TextRecognitionTests */,
+				591A755B23F4B9AF00396655 /* TextRecognitionUITests */,
+				591A753A23F4B9AE00396655 /* Products */,
+				E2192251DE4A3DFFDB00C162 /* Pods */,
+				89C6D05DB3563D05B37162AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		591A753A23F4B9AE00396655 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				591A753923F4B9AE00396655 /* TextRecognition.app */,
+				591A754D23F4B9AF00396655 /* TextRecognitionTests.xctest */,
+				591A755823F4B9AF00396655 /* TextRecognitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		591A753B23F4B9AE00396655 /* TextRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				591A756A23F4B9C900396655 /* Helpers */,
+				591A753C23F4B9AE00396655 /* AppDelegate.swift */,
+				591A753E23F4B9AE00396655 /* ViewController.swift */,
+				591A754023F4B9AF00396655 /* Main.storyboard */,
+				591A754323F4B9AF00396655 /* Assets.xcassets */,
+				591A754523F4B9AF00396655 /* LaunchScreen.storyboard */,
+				591A754823F4B9AF00396655 /* Info.plist */,
+				59E2ACD023F4BF9E00C1FA84 /* GoogleService-Info.plist */,
+			);
+			path = TextRecognition;
+			sourceTree = "<group>";
+		};
+		591A755023F4B9AF00396655 /* TextRecognitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				591A755123F4B9AF00396655 /* TextRecognitionTests.swift */,
+				591A755323F4B9AF00396655 /* Info.plist */,
+			);
+			path = TextRecognitionTests;
+			sourceTree = "<group>";
+		};
+		591A755B23F4B9AF00396655 /* TextRecognitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				591A755C23F4B9AF00396655 /* TextRecognitionUITests.swift */,
+				591A755E23F4B9AF00396655 /* Info.plist */,
+			);
+			path = TextRecognitionUITests;
+			sourceTree = "<group>";
+		};
+		591A756A23F4B9C900396655 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				591A756B23F4B9D600396655 /* ImageHelper.swift */,
+				591A756D23F4B9DE00396655 /* VisionHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		89C6D05DB3563D05B37162AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4CB08E64569264D41E92B27 /* Pods_TextRecognition.framework */,
+				193FFD840FF9EA904A67E20C /* Pods_TextRecognitionTests.framework */,
+				F863C10864C087C78F970F8C /* Pods_TextRecognitionUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2192251DE4A3DFFDB00C162 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2368F638491169936ECCB403 /* Pods-TextRecognition.debug.xcconfig */,
+				AA5B50EE6007D6F6ACDF425B /* Pods-TextRecognition.release.xcconfig */,
+				E207BA5A2ED72B4C674078E6 /* Pods-TextRecognitionTests.debug.xcconfig */,
+				E8B61028C57FC952CA6E9749 /* Pods-TextRecognitionTests.release.xcconfig */,
+				B7A284E88038F71B31E4CCB9 /* Pods-TextRecognitionUITests.debug.xcconfig */,
+				F101B9A3FE00CD680B295AEA /* Pods-TextRecognitionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		591A753823F4B9AE00396655 /* TextRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591A756123F4B9AF00396655 /* Build configuration list for PBXNativeTarget "TextRecognition" */;
+			buildPhases = (
+				8185788FF18FA8864369062B /* [CP] Check Pods Manifest.lock */,
+				591A753523F4B9AE00396655 /* Sources */,
+				591A753623F4B9AE00396655 /* Frameworks */,
+				591A753723F4B9AE00396655 /* Resources */,
+				3EA6BACE95C29FDA7731879F /* [CP] Embed Pods Frameworks */,
+				73FFD280BF49049FCE0215B1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextRecognition;
+			productName = TextRecognition;
+			productReference = 591A753923F4B9AE00396655 /* TextRecognition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		591A754C23F4B9AF00396655 /* TextRecognitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591A756423F4B9AF00396655 /* Build configuration list for PBXNativeTarget "TextRecognitionTests" */;
+			buildPhases = (
+				5375CE6C485AF473598491CB /* [CP] Check Pods Manifest.lock */,
+				591A754923F4B9AF00396655 /* Sources */,
+				591A754A23F4B9AF00396655 /* Frameworks */,
+				591A754B23F4B9AF00396655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				591A754F23F4B9AF00396655 /* PBXTargetDependency */,
+			);
+			name = TextRecognitionTests;
+			productName = TextRecognitionTests;
+			productReference = 591A754D23F4B9AF00396655 /* TextRecognitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		591A755723F4B9AF00396655 /* TextRecognitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 591A756723F4B9AF00396655 /* Build configuration list for PBXNativeTarget "TextRecognitionUITests" */;
+			buildPhases = (
+				8702B57EDB138D91EE722CDD /* [CP] Check Pods Manifest.lock */,
+				591A755423F4B9AF00396655 /* Sources */,
+				591A755523F4B9AF00396655 /* Frameworks */,
+				591A755623F4B9AF00396655 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				591A755A23F4B9AF00396655 /* PBXTargetDependency */,
+			);
+			name = TextRecognitionUITests;
+			productName = TextRecognitionUITests;
+			productReference = 591A755823F4B9AF00396655 /* TextRecognitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		591A753123F4B9AE00396655 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Accecare;
+				TargetAttributes = {
+					591A753823F4B9AE00396655 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					591A754C23F4B9AF00396655 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 591A753823F4B9AE00396655;
+					};
+					591A755723F4B9AF00396655 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 591A753823F4B9AE00396655;
+					};
+				};
+			};
+			buildConfigurationList = 591A753423F4B9AE00396655 /* Build configuration list for PBXProject "TextRecognition" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				tr,
+			);
+			mainGroup = 591A753023F4B9AE00396655;
+			productRefGroup = 591A753A23F4B9AE00396655 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				591A753823F4B9AE00396655 /* TextRecognition */,
+				591A754C23F4B9AF00396655 /* TextRecognitionTests */,
+				591A755723F4B9AF00396655 /* TextRecognitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		591A753723F4B9AE00396655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E2ACD123F4BF9E00C1FA84 /* GoogleService-Info.plist in Resources */,
+				591A754723F4B9AF00396655 /* LaunchScreen.storyboard in Resources */,
+				591A754423F4B9AF00396655 /* Assets.xcassets in Resources */,
+				591A754223F4B9AF00396655 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591A754B23F4B9AF00396655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591A755623F4B9AF00396655 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EA6BACE95C29FDA7731879F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TextRecognition/Pods-TextRecognition-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextRecognition/Pods-TextRecognition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5375CE6C485AF473598491CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextRecognitionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73FFD280BF49049FCE0215B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TextRecognition/Pods-TextRecognition-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMLVisionTextModel/GoogleMVTextDetectorResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextRecognition/Pods-TextRecognition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8185788FF18FA8864369062B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextRecognition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8702B57EDB138D91EE722CDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextRecognitionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		591A753523F4B9AE00396655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591A753F23F4B9AE00396655 /* ViewController.swift in Sources */,
+				591A756E23F4B9DE00396655 /* VisionHelper.swift in Sources */,
+				591A753D23F4B9AE00396655 /* AppDelegate.swift in Sources */,
+				591A756C23F4B9D600396655 /* ImageHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591A754923F4B9AF00396655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591A755223F4B9AF00396655 /* TextRecognitionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		591A755423F4B9AF00396655 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				591A755D23F4B9AF00396655 /* TextRecognitionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		591A754F23F4B9AF00396655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 591A753823F4B9AE00396655 /* TextRecognition */;
+			targetProxy = 591A754E23F4B9AF00396655 /* PBXContainerItemProxy */;
+		};
+		591A755A23F4B9AF00396655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 591A753823F4B9AE00396655 /* TextRecognition */;
+			targetProxy = 591A755923F4B9AF00396655 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		591A754023F4B9AF00396655 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				591A754123F4B9AF00396655 /* Base */,
+				591A757123F4BC8500396655 /* tr */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		591A754523F4B9AF00396655 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				591A754623F4B9AF00396655 /* Base */,
+				591A757223F4BC8500396655 /* tr */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		591A755F23F4B9AF00396655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		591A756023F4B9AF00396655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		591A756223F4B9AF00396655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2368F638491169936ECCB403 /* Pods-TextRecognition.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5A4U9SJ3XA;
+				INFOPLIST_FILE = TextRecognition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.accecare.TextRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		591A756323F4B9AF00396655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA5B50EE6007D6F6ACDF425B /* Pods-TextRecognition.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5A4U9SJ3XA;
+				INFOPLIST_FILE = TextRecognition/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.accecare.TextRecognition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		591A756523F4B9AF00396655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E207BA5A2ED72B4C674078E6 /* Pods-TextRecognitionTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5A4U9SJ3XA;
+				INFOPLIST_FILE = TextRecognitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.accecare.TextRecognitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextRecognition.app/TextRecognition";
+			};
+			name = Debug;
+		};
+		591A756623F4B9AF00396655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B61028C57FC952CA6E9749 /* Pods-TextRecognitionTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5A4U9SJ3XA;
+				INFOPLIST_FILE = TextRecognitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.accecare.TextRecognitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextRecognition.app/TextRecognition";
+			};
+			name = Release;
+		};
+		591A756823F4B9AF00396655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A284E88038F71B31E4CCB9 /* Pods-TextRecognitionUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5A4U9SJ3XA;
+				INFOPLIST_FILE = TextRecognitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.accecare.TextRecognitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TextRecognition;
+			};
+			name = Debug;
+		};
+		591A756923F4B9AF00396655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F101B9A3FE00CD680B295AEA /* Pods-TextRecognitionUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5A4U9SJ3XA;
+				INFOPLIST_FILE = TextRecognitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.accecare.TextRecognitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TextRecognition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		591A753423F4B9AE00396655 /* Build configuration list for PBXProject "TextRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591A755F23F4B9AF00396655 /* Debug */,
+				591A756023F4B9AF00396655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		591A756123F4B9AF00396655 /* Build configuration list for PBXNativeTarget "TextRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591A756223F4B9AF00396655 /* Debug */,
+				591A756323F4B9AF00396655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		591A756423F4B9AF00396655 /* Build configuration list for PBXNativeTarget "TextRecognitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591A756523F4B9AF00396655 /* Debug */,
+				591A756623F4B9AF00396655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		591A756723F4B9AF00396655 /* Build configuration list for PBXNativeTarget "TextRecognitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591A756823F4B9AF00396655 /* Debug */,
+				591A756923F4B9AF00396655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 591A753123F4B9AE00396655 /* Project object */;
+}
